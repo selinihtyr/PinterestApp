@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbHorizontal="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/chipgroup_corner"
+            android:backgroundTint="@color/black">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipForYou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:chipBackgroundColor="@color/black"
+                app:chipStrokeColor="@color/black" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipFollowing3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coding"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:chipBackgroundColor="@color/black"
+                app:chipStrokeColor="@color/black" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipWeekendTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Technology"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:chipBackgroundColor="@color/black"
+                app:chipStrokeColor="@color/black" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipFashion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Theme"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:chipBackgroundColor="@color/black"
+                app:chipStrokeColor="@color/black" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipFashion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Design"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:chipBackgroundColor="@color/black"
+                app:chipStrokeColor="@color/black" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="413dp"
+        android:layout_height="33dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/chip_home"
+            tools:srcCompat="@drawable/chip_home" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/chip_search"
+            tools:srcCompat="@drawable/chip_search" />
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/chip_add"
+            tools:srcCompat="@drawable/chip_add" />
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/chip_notifications"
+            tools:srcCompat="@drawable/chip_notifications" />
+
+        <ImageView
+            android:id="@+id/ivUser"
+            android:layout_width="71dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/chip_user"
+            tools:srcCompat="@drawable/chip_user" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
